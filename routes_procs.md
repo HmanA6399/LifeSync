@@ -56,4 +56,4 @@
 ## Notes
 
 - For tasks, diseases and sports, insure that the admin is authorized if its ID is given in any of the Procedures
-- Add _medicineName_ as 
+- Add _medicineName_ as an attribute (partial key) to the _MedicineDose_. Sorry, I forgot to write this 😅
