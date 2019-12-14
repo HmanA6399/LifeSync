@@ -73,12 +73,12 @@
 | /user/:userId/rest | POST | `AddUserRest(restId, userId, restData)` | `restId`: ID of the rest to be added to the person<br>`userId`: ID of the user to add rest to<br>`restData`: values to some of the attributes of _Person\_Takes\_Rest_ relation with all non-nullables given | `NULL`
 | /user/:userId/rest/:restID | GetUserRest(restId, userId) | `restId`: ID of the rest to get info about<br>`userId`: ID of the user who takes this rest | Values of the attributes of _Person\_Takes\_Rest_ relation to this record|
 | /user/:userId/rest/:restId | POST | `EditUserRest(restId, userId, restData)` | `restId`: ID of the rest to be edited to the person<br>`userId`: ID of the user to edit rest of<br>`restData`: values to some of the attributes of _Person\_Takes\_Rest_ relation | `NULL`
-| /user/:userId/rest/:restId | POST | `DeleteUserRest(restId, userId)` | `restId`: ID of the rest to be deleted from the person<br>`userId`: ID of the user to delete rest of| `NULL`
+| /user/:userId/rest/:restId | DELETE | `DeleteUserRest(restId, userId)` | `restId`: ID of the rest to be deleted from the person<br>`userId`: ID of the user to delete rest of| `NULL`
 | /habit | GET | GetHabit() | `NULL` | RestIDs and Names of all the Habits in the DB |
 | /user/:userId/habit | POST | `AddUserHabit(habitName, userId, habitData)` | `habitName`: Name of the habit to be added to the person<br>`userId`: ID of the user to add habit to<br>`habitData`: values to some of the attributes of _Person\_has\_Habit_ relation with all non-nullables given | `NULL`
 | /user/:userId/habit/:habitName | GetUserHabit(habitName, userId) | `habitName`: Name of the habit to get info about<br>`userId`: ID of the user who has this habit | Values of the attributes of _Person\_has\_Habit_ relation to this record|
 | /user/:userId/habit/:habitName | POST | `EditUserHabit(habitName, userId, habitData)` | `habitName`: Name of the habit to be edited to the person<br>`userId`: ID of the user to edit habit of<br>`habitData`: values to some of the attributes of _Person\_has\_Habit_ relation | `NULL`
-| /user/:userId/habit/:habitName | POST | `DeleteUserhabit(habitName, userId)` | `habitName`: Name of the habit to be deleted from the person<br>`userId`: ID of the user to delete habit of| `NULL`
+| /user/:userId/habit/:habitName | DELETE | `DeleteUserhabit(habitName, userId)` | `habitName`: Name of the habit to be deleted from the person<br>`userId`: ID of the user to delete habit of| `NULL`
 
 ## Notes
 
